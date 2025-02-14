@@ -66,7 +66,7 @@ async function obtenerYGuardarTipoCambio() {
 }
 
 // Programar la tarea a las 7:00 a.m.
-cron.schedule('0 7 * * *', () => {
+cron.schedule('* * * * *', () => {
   console.log('Ejecutando la tarea programada a las 7:00 a.m.');
   obtenerYGuardarTipoCambio();
 });
